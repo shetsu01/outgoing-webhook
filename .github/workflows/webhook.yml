@@ -1,0 +1,16 @@
+name: "Webhook"
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Run tests
+        run: |
+          echo "Running tests"
+          echo "Tests passed"
